@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMD0812 - Multiplayer BattleShips Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="game-status" id="game-status">
+      <p>Player: <span id="player-number">Sorry, the server is full!</span></p>
+      <p>Queue Status: <span id="queue-status">Waiting for players</span></p>
+      <p>Time: <span id="time">0:0</span></p>
+      <div class="command">
+        <button id="ready-button" class="disabled">Ready</button>
+        <button id="start-button" class="disabled">Start</button>
+      </div>
+    </div>
+
+    <div class="game-board"></div>
+    <div class="command">
+      <!-- Ships and buttons go here -->
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
